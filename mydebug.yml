@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 10.0.0.5
   become: yes
   tasks:
   - name: i want to excuite direct linux command
@@ -8,3 +8,4 @@
   - name: i want to debug first task result
     debug:
        msg:"{{myfirsttaskresult}}"
+       
