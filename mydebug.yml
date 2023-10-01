@@ -3,9 +3,8 @@
   become: yes
   tasks:
   - name: i want to excuite direct linux command
-    command:
+    command: hostname -f
     register: myfirsttaskresult
   - name: i want to debug first task result
     debug:
        msg:"{{myfirsttaskresult}}"
-       
