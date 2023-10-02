@@ -22,7 +22,7 @@
       dest: /home/chakri/apache-tomcat-10.0.20.tar.gz
       force_basic_auth: yes
   handlers:
-  - name: restart webserver
+  - name: restartwebserver
     service:
       name: apache2
       state: restarted
